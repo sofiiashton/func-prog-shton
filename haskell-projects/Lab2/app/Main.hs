@@ -25,5 +25,5 @@ main :: IO ()
 main = do
     let favSong = Song "White Ferrari" "Frank Ocean" "Blonde" "Alternative" 2016 249
         (minutes, seconds) = formatLength (songLength favSong)
-    putStrLn $ "My favorite song is " ++ title favSong ++ " by " ++ artist favSong ++ 
-        ". It is " ++ show minutes ++ " minutes " ++ show seconds ++ " seconds long and was released in " ++ show (year favSong)
+    putStrLn $ "My favorite song is " ++ title favSong ++ " by " ++ artist favSong ++ " from the album " ++ album favSong ++
+        ". It is " ++ show minutes ++ " minutes and " ++ show seconds ++ " seconds long and was released in " ++ show (year favSong) ++ "."
