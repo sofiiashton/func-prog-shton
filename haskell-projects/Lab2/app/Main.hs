@@ -1,7 +1,5 @@
 module Main (main) where
 
-import Lib
-
 data Song = Song { title :: String  
 , artist :: String  
 , album :: String  
