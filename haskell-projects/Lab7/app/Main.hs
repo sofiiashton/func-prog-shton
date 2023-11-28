@@ -1,5 +1,6 @@
 module Main (main) where
 
+-- Y-комбінатор 
 fix :: (a -> a) -> a
 fix f = f (fix f)
 
@@ -11,6 +12,6 @@ fac = fix fac'
 
 main :: IO ()
 main = do
-  putStrLn "Обчислення факторіалу числа 5 за допомогою Y-комбінатора."
+  putStrLn "Обчислення факторіалу числа 7 за допомогою Y-комбінатора."
   putStrLn "Результат:"
-  print (fac 5)
+  print (fac 7)
